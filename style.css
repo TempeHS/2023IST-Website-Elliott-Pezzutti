@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+</style>
 
 BODY {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Courier Prime', monospace;
 }
 
 DIV {
