@@ -1,13 +1,10 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-</style>
-
+style
 .button-container {
 	display: flex;
 	width: 100%;
 	min-height: 100vh;
 	justify-content: center;
-	allign-items: center;
+	align-items: center;
 }
 
 .button {
@@ -31,6 +28,10 @@
 	 color:#FFF;
 	 background-color: #FFCE00;
 }
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+style
+
+
 BODY {
 	font-family: 'Courier Prime', monospace;
 }
