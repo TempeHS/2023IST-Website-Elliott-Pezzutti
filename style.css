@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+</style>
 
 .button-container {
 	display: flex;
@@ -30,7 +32,7 @@
 	 background-color: #FFCE00;
 }
 BODY {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Courier Prime', monospace;
 }
 
 DIV {
