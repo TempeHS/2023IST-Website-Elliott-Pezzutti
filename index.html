@@ -9,16 +9,50 @@
 <link rel="shortcut icon" href="images/favicon.png" />
 <!-- Link the webpage to the stylesheet -->
 <link href="style.css" rel="stylesheet" type="text/css" />
+  
+<!--darkmode,lightmode, buttons, could be in style.css, but i want it to be available from inspect
+(could be more accessable to darkmode extensions(?)) -->
+  
+ <style>
+      /* Light mode styles */
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+      h1 {
+        border-bottom: 1px solid #000;
+      }
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #222;
+        color: #fff;
+      }
+      body.dark-mode h1 {
+        border-color: #fff;
+      }
+      /* Button styles */
+      .toggle-button {
+        background-color: #2196F3;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+ 
 </HEAD>
 <BODY>
 <!-- Create a div for the header -->
 <div id="Header">
   <!-- The header holding the dark mode toggle -->
- <label class="switch" for="dark-mode-toggle">
-  <input type="checkbox" id="dark-mode-toggle">
-  <span class="slider"></span>
-</label>
-
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <script>
+      function toggleDarkMode() {
+        const body = document.querySelector('body');
+        body.classList.toggle('dark-mode');
+      }
+  </script>
 </div>
 <!-- Create a div for the main content of the webpage -->
 <div id="MainContent">
@@ -29,11 +63,13 @@
   <!-- Add a button with a link -->
   This is a <button><A href="https://www.pewresearch.org/internet/2016/09/01/book-reading-2016/">depressing statistic</A></button>
   <!-- Add a heading for a section on reading books -->
-  <H3>read a book</H3>
+  <H3>YOU SHOULD USE AI!!!</H3>
   <!-- Add a subheading and paragraph with information on the benefits of reading -->
-  <h2>too many people do not read enough books, and are ignorant to cultures and lessons from the past.</h2>
-  <p>books like 1984, metroplis, farenhiet 451, and many other books tell cautionary times made for the context of their time, showing a deeper way to understand the past, and the present.
-  some people think reading isnt worth the time it takes, or that its too boring. but the knowledge of humanity, and lingustics inside of every book is enough to change your life for the better</p>
+  <h2>Artificial Intelligence (AI) tools have the potential to enhance both academic and work-related tasks by reducing burstiness and perplexity in workflow processes, providing valuable insights and predictions, and improving overall accuracy and efficiency. In academic settings, AI can assist with the analysis of large datasets, extract pertinent information, and provide summarized findings that can greatly reduce burstiness in research workflows. For example, AI-powered citation generators and plagiarism checkers can rapidly generate bibliographies and reference lists and prevent inadvertent plagiarism, respectively. Furthermore, AI can personalize learning experiences, identify areas where students may have knowledge gaps, and provide focused feedback that can increase academic performance.
+
+In the workplace, AI can be harnessed to optimize workflows, enhance productivity, and reduce costs by reducing burstiness and perplexity in day-to-day operations. AI-powered tools can automate administrative tasks such as data entry, scheduling, and email management, freeing up employees to focus on more strategic and creative work, leading to less perplexity in the workflow. Moreover, AI-powered chatbots and virtual assistants can enable businesses to provide more responsive customer service, ensuring that employees can focus on other tasks while customer inquiries are promptly addressed. AI can also be leveraged to analyze data, identify patterns and trends, and offer insights that can aid in decision-making and drive overall business growth.
+
+However, it is important to recognize that AI tools are not a panacea and should be used prudently. AI algorithms may be biased, incomplete, or inaccurate, leading to more burstiness and perplexity in workflows. It is crucial to thoroughly assess the quality and dependability of AI tools, and ensure that their use is ethical and responsible. Furthermore, it is critical to acknowledge that AI is not a substitute for human judgment, creativity, and empathy, and should be used to complement and not replace human expertise.</p>
   <!-- Add an image with a caption -->
   <figure>
     <img src="https://groundedcuriosity.com/wp-content/uploads/2020/09/1984-cover.jpg" style="height:250px" alt="Cover of 1984 by George Orwell">
