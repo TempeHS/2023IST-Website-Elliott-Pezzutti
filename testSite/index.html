@@ -1,0 +1,107 @@
+<!doctype HTML>
+<HTML lang="en">
+<HEAD>
+  
+<!--FAVICON STUFF-->
+<link rel="apple-touch-icon" sizes="180x180" href="2023IST---Website-Elliott-Pezzutti/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="2023IST---Website-Elliott-Pezzutti/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="2023IST---Website-Elliott-Pezzutti/images/favicon-16x16.png">
+<link rel="manifest" href="2023IST---Website-Elliott-Pezzutti/images/site.webmanifest">
+<link rel="mask-icon" href="2023IST---Website-Elliott-Pezzutti/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="2023IST---Website-Elliott-Pezzutti/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="2023IST---Website-Elliott-Pezzutti/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+  
+<!-- Configure the viewport to fit the device screen -->
+<META name="viewport" content="width=device-width, initial-scale=1">
+<!-- Set the title of the webpage -->
+<TITLE>My First Website</TITLE>
+<!-- Link the webpage to the stylesheet -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+  
+<!--darkmode,lightmode, buttons, could be in style.css, but i want it to be available from inspect
+(could be more accessable to darkmode extensions(?)) -->
+  
+ <style>
+      /* Light mode styles */
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+      h1 {
+        border-bottom: 1px solid #000;
+      }
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #222;
+        color: #fff;
+      }
+      body.dark-mode h1 {
+        border-color: #fff;
+      }
+      /* Button styles */
+      .toggle-button {
+        background-color: #2196F3;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+ 
+</HEAD>
+<BODY>
+<!-- Create a div for the header -->
+<div id="Header">
+  <!-- The header holding the dark mode toggle -->
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <script>
+      function toggleDarkMode() {
+        const body = document.querySelector('body');
+        body.classList.toggle('dark-mode');
+      }
+  </script>
+</div>
+<!-- Create a div for the main content of the webpage -->
+<div id="MainContent">
+  <!-- Add a large heading to the webpage -->
+  <H1>Hello World!</H1>
+  <!-- Add a smaller subheading -->
+  <H3>New sub heading</H3>
+  <!-- Add a button with a link -->
+  This is a <button><A href="https://www.pewresearch.org/internet/2016/09/01/book-reading-2016/">depressing statistic</A></button>
+  <!-- Add a heading for a section on reading books -->
+  <H3>YOU SHOULD USE AI!!!</H3>
+  <!-- Add a subheading and paragraph with information on the benefits of reading -->
+  <h2>Artificial Intelligence (AI) tools have the potential to enhance both academic and work-related tasks by reducing burstiness and perplexity in workflow processes, providing valuable insights and predictions, and improving overall accuracy and efficiency. In academic settings, AI can assist with the analysis of large datasets, extract pertinent information, and provide summarized findings that can greatly reduce burstiness in research workflows. For example, AI-powered citation generators and plagiarism checkers can rapidly generate bibliographies and reference lists and prevent inadvertent plagiarism, respectively. Furthermore, AI can personalize learning experiences, identify areas where students may have knowledge gaps, and provide focused feedback that can increase academic performance.
+
+In the workplace, AI can be harnessed to optimize workflows, enhance productivity, and reduce costs by reducing burstiness and perplexity in day-to-day operations. AI-powered tools can automate administrative tasks such as data entry, scheduling, and email management, freeing up employees to focus on more strategic and creative work, leading to less perplexity in the workflow. Moreover, AI-powered chatbots and virtual assistants can enable businesses to provide more responsive customer service, ensuring that employees can focus on other tasks while customer inquiries are promptly addressed. AI can also be leveraged to analyze data, identify patterns and trends, and offer insights that can aid in decision-making and drive overall business growth.
+
+However, it is important to recognize that AI tools are not a panacea and should be used prudently. AI algorithms may be biased, incomplete, or inaccurate, leading to more burstiness and perplexity in workflows. It is crucial to thoroughly assess the quality and dependability of AI tools, and ensure that their use is ethical and responsible. Furthermore, it is critical to acknowledge that AI is not a substitute for human judgment, creativity, and empathy, and should be used to complement and not replace human expertise.</p>
+  <!-- Add an image with a caption -->
+  <figure>
+    <img src="https://www.asme.org/getmedia/80C9CF8E-DD82-4DD2-A47E-4DFDA0DBF93D/Robot-Helps-People-Get-Dressed_01.aspx?data-width-removed=340" style="height:250px" alt="Robots helping in everyday life.">
+    <figcaption>The cover of the book "1984" by George Orwell</figcaption>
+  </figure>
+  <!-- Add a horizontal rule to visually separate the sections -->
+  <hr/>
+</div>
+<!-- Add a container for a button -->
+<div class="button-container">
+  <!-- Add a button with a link to find a library near you -->
+  <button class="button button-5" onclick="window.location.href='https://openai.com/blog/chatgpt';">Learn from them.</button>
+</div>
+<!-- Add a div for the footer -->
+<div id="Footer">
+  <!-- Add two divs for the left and right sections of the footer -->
+  <div id="FooterLeft">
+    <!-- The left section of the footer is currently empty -->
+  </div>
+  <div id="FooterRight">
+    <!-- The right section of the footer is currently empty -->
+  </div>
+</div>
+</BODY>
+</HTML>

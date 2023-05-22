@@ -1,29 +1,16 @@
-<!doctype HTML>
-<HTML lang="en">
-<HEAD>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   
-<!--FAVICON STUFF-->
-<link rel="apple-touch-icon" sizes="180x180" href="2023IST---Website-Elliott-Pezzutti/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="2023IST---Website-Elliott-Pezzutti/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="2023IST---Website-Elliott-Pezzutti/images/favicon-16x16.png">
-<link rel="manifest" href="2023IST---Website-Elliott-Pezzutti/images/site.webmanifest">
-<link rel="mask-icon" href="2023IST---Website-Elliott-Pezzutti/images/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="2023IST---Website-Elliott-Pezzutti/images/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="2023IST---Website-Elliott-Pezzutti/images/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-  
-<!-- Configure the viewport to fit the device screen -->
-<META name="viewport" content="width=device-width, initial-scale=1">
-<!-- Set the title of the webpage -->
-<TITLE>My First Website</TITLE>
-<!-- Link the webpage to the stylesheet -->
-<link href="style.css" rel="stylesheet" type="text/css" />
-  
-<!--darkmode,lightmode, buttons, could be in style.css, but i want it to be available from inspect
-(could be more accessable to darkmode extensions(?)) -->
-  
- <style>
+  </head>
+  <body>
+<style>
+.container {border:1px solid red;}
+
       /* Light mode styles */
       body {
         background-color: #fff;
@@ -49,59 +36,101 @@
         border-radius: 4px;
         cursor: pointer;
       }
-    </style>
- 
-</HEAD>
-<BODY>
-<!-- Create a div for the header -->
-<div id="Header">
-  <!-- The header holding the dark mode toggle -->
-    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <script>
-      function toggleDarkMode() {
-        const body = document.querySelector('body');
-        body.classList.toggle('dark-mode');
-      }
-  </script>
-</div>
-<!-- Create a div for the main content of the webpage -->
-<div id="MainContent">
-  <!-- Add a large heading to the webpage -->
-  <H1>Hello World!</H1>
-  <!-- Add a smaller subheading -->
-  <H3>New sub heading</H3>
-  <!-- Add a button with a link -->
-  This is a <button><A href="https://www.pewresearch.org/internet/2016/09/01/book-reading-2016/">depressing statistic</A></button>
-  <!-- Add a heading for a section on reading books -->
-  <H3>YOU SHOULD USE AI!!!</H3>
-  <!-- Add a subheading and paragraph with information on the benefits of reading -->
-  <h2>Artificial Intelligence (AI) tools have the potential to enhance both academic and work-related tasks by reducing burstiness and perplexity in workflow processes, providing valuable insights and predictions, and improving overall accuracy and efficiency. In academic settings, AI can assist with the analysis of large datasets, extract pertinent information, and provide summarized findings that can greatly reduce burstiness in research workflows. For example, AI-powered citation generators and plagiarism checkers can rapidly generate bibliographies and reference lists and prevent inadvertent plagiarism, respectively. Furthermore, AI can personalize learning experiences, identify areas where students may have knowledge gaps, and provide focused feedback that can increase academic performance.
+</style>
 
-In the workplace, AI can be harnessed to optimize workflows, enhance productivity, and reduce costs by reducing burstiness and perplexity in day-to-day operations. AI-powered tools can automate administrative tasks such as data entry, scheduling, and email management, freeing up employees to focus on more strategic and creative work, leading to less perplexity in the workflow. Moreover, AI-powered chatbots and virtual assistants can enable businesses to provide more responsive customer service, ensuring that employees can focus on other tasks while customer inquiries are promptly addressed. AI can also be leveraged to analyze data, identify patterns and trends, and offer insights that can aid in decision-making and drive overall business growth.
+<!-- dark mode button-->
+<button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<script>
+  function toggleDarkMode() {
+    const body = document.querySelector('body');
+    body.classList.toggle('dark-mode');
+    
+  }
+</script>
 
-However, it is important to recognize that AI tools are not a panacea and should be used prudently. AI algorithms may be biased, incomplete, or inaccurate, leading to more burstiness and perplexity in workflows. It is crucial to thoroughly assess the quality and dependability of AI tools, and ensure that their use is ethical and responsible. Furthermore, it is critical to acknowledge that AI is not a substitute for human judgment, creativity, and empathy, and should be used to complement and not replace human expertise.</p>
-  <!-- Add an image with a caption -->
-  <figure>
-    <img src="https://www.asme.org/getmedia/80C9CF8E-DD82-4DD2-A47E-4DFDA0DBF93D/Robot-Helps-People-Get-Dressed_01.aspx?data-width-removed=340" style="height:250px" alt="Robots helping in everyday life.">
-    <figcaption>The cover of the book "1984" by George Orwell</figcaption>
-  </figure>
-  <!-- Add a horizontal rule to visually separate the sections -->
-  <hr/>
-</div>
-<!-- Add a container for a button -->
-<div class="button-container">
-  <!-- Add a button with a link to find a library near you -->
-  <button class="button button-5" onclick="window.location.href='https://openai.com/blog/chatgpt';">Learn from them.</button>
-</div>
-<!-- Add a div for the footer -->
-<div id="Footer">
-  <!-- Add two divs for the left and right sections of the footer -->
-  <div id="FooterLeft">
-    <!-- The left section of the footer is currently empty -->
+<!-- NAV BAR START-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><IMG src="images\favicon.ico"</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <!-- dark mode button-->
+      <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+      <script>
+        function toggleDarkMode() {
+              const body = document.querySelector('body');
+                  body.classList.toggle('dark-mode');
+        }
+        </script>
+    </div>
   </div>
-  <div id="FooterRight">
-    <!-- The right section of the footer is currently empty -->
+</nav>
+
+<!-- NAV BAR END-->
+
+<!-- HERO SLIDER BLOCK START-->
+
+<!-- HERO SLIDER BLOCK end-->
+
+<!-- SIDE BAR START-->
+
+
+<!-- SIDE BAR end-->
+
+<!-- ACCORDIAN START-->
+
+<!-- ACCORDIAN end-->
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-lg-8 col-md-12">
+      1 of 3
+    </div>
+    <div class="col-lg-4 col-md-12">
+      2 of 3
+    </div>
+	    <div class="col-lg-4 col-md-12 d-lg-none">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
   </div>
 </div>
-</BODY>
-</HTML>
+
+
+
+<!-- DO NOT EDIT BELOW THIS LINE --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
